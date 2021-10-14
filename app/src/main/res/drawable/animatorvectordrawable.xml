@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt" >
+    <aapt:attr name="android:drawable">
+        <vector
+            android:height="300dp"
+            android:width="300dp"
+            android:viewportHeight="600"
+            android:viewportWidth="600" >
+                <path
+                    android:name="playpath"
+                    android:fillColor="#00FF00"
+                    android:pathData="@string/start_path" />
+        </vector>
+    </aapt:attr>
+    <target android:name="playpath" >
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator
+                    android:duration="3000"
+                    android:propertyName="pathData"
+                    android:valueFrom="@string/start_path"
+                    android:valueTo="@string/end_path"
+                    android:valueType="pathType"/>
+            </set>
+        </aapt:attr>
+    </target>
+</animated-vector>
